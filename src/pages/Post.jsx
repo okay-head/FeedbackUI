@@ -6,7 +6,7 @@ export default function Post() {
    //place this declaration as top level as possible
    const navigateFn = useNavigate()
 
-   if (params.status == 404) {
+   if (Number(params.status) === 404) {
       return <Navigate to="/NotFound" />
    }
    /*

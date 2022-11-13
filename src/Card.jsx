@@ -1,5 +1,5 @@
 import MoreStyledElement from './MoreStyledElement';
-import { AiFillCloseCircle,AiOutlineCloseCircle } from 'react-icons/ai';
+import {AiOutlineCloseCircle } from 'react-icons/ai';
 function Card({index,props ,deleteElement}) {
    return (
       <div className="card">

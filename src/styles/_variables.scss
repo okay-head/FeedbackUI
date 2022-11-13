@@ -1,0 +1,14 @@
+$black: rgba(0, 0, 0, 0.826);
+$white:#ecf0f1;
+$midnightBlue:#2c3e50;
+$imperial: #222f3e;
+$purple:#833471;
+$whiteSmoke: #0f0f0f21;
+$mid-black: rgba(0, 0, 0, 0.819);
+
+%flex-center{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}

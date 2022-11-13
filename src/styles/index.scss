@@ -1,0 +1,191 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   font-size: 10px;
+}
+button{
+   cursor: pointer;
+}
+body {
+   font-family: 'Nunito', sans-serif;
+   background-color: $black;
+}
+
+header {
+   margin-bottom: 8em;
+   background-color: $purple;
+   text-align: center;
+   color: $white;
+   a{
+      color: $white!important;
+      text-decoration: none;
+   }
+   h2 {
+      font-size: 3em;
+   }
+}
+
+// **** Redesign this ****
+.card {
+   margin: 0 auto 8em auto;
+}
+
+@media screen and (max-width: 1050px) {
+   .blog_post {
+      margin: auto 6em !important;
+   }
+}
+@media screen and (max-width: 594px) {
+   span.close {
+      right: 3.7%;
+   }
+}
+
+%marginCenter {
+   margin: auto;
+   background: #fff;
+   max-width: 900px;
+   border-radius: 10px;
+}
+
+.blog_post {
+   @extend %marginCenter;
+   box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+   position: relative;
+
+   .container_copy {
+      border-radius: 0 10px 0 0;
+      padding: 2.5rem 3.8rem 3rem 3.8rem;
+      background-color: $whiteSmoke;
+   }
+
+   .img_pod {
+      height: 40px;
+      width: 40px;
+      background: linear-gradient(90deg, $purple, #ff5ed6);
+      z-index: 10;
+      box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+      border-radius: 100%;
+      position: absolute;
+      left: -1.5%;
+      top: -8%;
+      @extend %flex-center;
+      color: white;
+      font-size: 1.3em;
+      font-weight: 900;
+   }
+
+   h3 {
+      margin: 0 0 0.5rem 0;
+      color: #999;
+      font-size: 1.25rem;
+   }
+
+   h1 {
+      margin: 0 0 1rem 0;
+      font-size: 2.5rem;
+      letter-spacing: 0.5px;
+      color: #333;
+   }
+
+   p {
+      // margin: 0 0 4.5rem 0;
+      font-size: 1.5rem;
+      line-height: 1.45;
+      color: #333;
+   }
+}
+
+.more {
+   &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.908);
+   }
+   transition: ease 0.3s background;
+   position: relative;
+   padding: 0.9em 2em;
+   background-color: $mid-black;
+   color: $white;
+   border-radius: 0 0 9px 9px;
+   .text {
+      border-radius: 0 0 9px 9px;
+      font-size: 1.4em;
+   }
+   span {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+}
+
+.light {
+   &:hover {
+      background-color: $purple !important;
+   }
+   background-color: #833471e2 !important;
+}
+
+.close {
+   cursor: pointer;
+   position: absolute;
+   right: 1.7%;
+   top: 8%;
+   transform: scale(2.3, 2.4);
+   transition: 0.15s ease transform;
+   &:hover {
+      transform: scale(2.45, 2.55);
+   }
+}
+
+.stats {
+   @extend %marginCenter;
+   font-weight: 900;
+   background: transparent;
+   color: #dedede;
+   font-size: 1.5em;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-bottom: 1.8em;
+   .count {
+      padding-left: 0em;
+   }
+   .average {
+      text-align: right;
+      padding-right: 0em;
+   }
+}
+
+.form{
+   @extend %marginCenter;
+   padding: 2.5rem 3.8rem 3rem 3.8rem;
+   font-size: 1.8em;
+   text-align: center;
+   margin-bottom: 2.5em;
+   input{
+      width: 60%;
+      padding: 0.15em 0.3em ;
+   }
+   ::placeholder{
+      font-size: 1.1em;
+   }
+   h3{
+      font-size: 2em;
+      padding-bottom: 0.5em;
+   }
+}
+
+.about{
+   font-size:16px ;color: white;
+   text-align: center;
+   margin: -3%  auto;
+   max-width: 900px;
+   h1{
+      margin-bottom: 0.8em;
+   }
+}

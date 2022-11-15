@@ -5,7 +5,6 @@ function Card({index,props ,deleteElement}) {
       <div className="card">
          <div className="blog_post">
             <span onClick={()=>deleteElement(index)} className="close">
-               {/* <AiFillCloseCircle /> */}
                <AiOutlineCloseCircle />
             </span>
             <div className="img_pod">

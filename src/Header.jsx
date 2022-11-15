@@ -10,5 +10,3 @@ function Header() {
 }
 
 export default Header;
-
-//you can directly destructure the params instead of doin props.

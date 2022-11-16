@@ -4,7 +4,6 @@ function State() {
 
    const [number,setNumber] = useState(51)
    function handleState() {
-      // setNumber((Math.random()* 100).toFixed(0))
       setNumber((prev)=>{
          console.log(prev);
          return prev+1;

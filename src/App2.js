@@ -21,5 +21,4 @@ export default App
 
 /* __concepts__ */
 // fragment encloser
-// looping html elements(essentially jsx) - forEach wont work, gotta use map which works because it 'returns an array'
-// passing props
+

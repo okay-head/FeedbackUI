@@ -3,7 +3,7 @@
 ### Functionality - 
 - Add feedback
 - Delete feedback
-- Try out routes [to be updated soon]
+<!-- - Try out routes [to be updated soon] -->
 
 
 

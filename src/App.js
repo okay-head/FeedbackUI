@@ -10,7 +10,6 @@ import Post from './pages/Post'
 import NotFound from './pages/NotFound'
 
 function App () {
-  // the global state
   const [feedback, setFeedback] = useState(data)
 
   // since we want to change the 'feedback' data, we use

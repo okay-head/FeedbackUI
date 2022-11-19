@@ -22,6 +22,12 @@ const data = [
     date: '7 September 2019',
     fb_title: 'App crashes frequent after update',
     fb_text: 'Although the previous versions are stable and work just fine.'
+  },
+  {
+    fb_rating: '6',
+    date: '9 May 2018',
+    fb_title: 'No dark mode',
+    fb_text: 'The app is handy and feature rich, the only drawback is the absence of a dark mode'
   }
 ]
 
